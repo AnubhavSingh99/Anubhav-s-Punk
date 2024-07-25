@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Backendless Data</title>
+</head>
+
+<body>
+    <h1>Data from Backendless</h1>
+    <ul id="data-list"></ul>
+    <input type="text" id="inp" placeholder="Enter 0 or 1">
+
+    <script src="https://api.backendless.com/sdk/js/latest/backendless.min.js"></script>
+    <script>
+        Backendless.initApp("D2A3EE32-F165-469C-95D9-BF329509B240", "F63B52C6-CE08-4D73-A9D3-DD4F4B18E39B");
+
+        document.getElementById('inp').addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                handleCommand();
+            }
+        });
+
+        function handleCommand() {
+            const index = parseInt(document.getElementById('inp').value, 10);
+            if (isNaN(index) || index < 0 || index > 1) {
+                alert("Please enter 0 or 1");
+                return;
+            }
+
+            Backendless.Data.of("blogs")
+                .find()
+                .then(function (data) {
+                    if (index >= 0 && index < data.length) {
+                        const selectedData = data[index].main;
+                        console.log(selectedData);
+                        const dataList = document.getElementById("data-list");
+                        dataList.innerHTML = ''; // Clear the list before appending new items
+
+                        // Create a list item for selectedData
+                        const listItem = document.createElement("li");
+                        listItem.textContent = selectedData; // Or JSON.stringify(selectedData) if it is an object
+                        dataList.appendChild(listItem);
+                    } else {
+                        alert("Invalid index. Please enter 0 or 1.");
+                    }
+                })
+                .catch(function (error) {
+                    console.error("Error fetching data:", error); // Log error to the console
+                });
+        }
+    </script>
+</body>
+
+</html>
