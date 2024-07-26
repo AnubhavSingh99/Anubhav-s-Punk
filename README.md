@@ -13,10 +13,18 @@ Welcome to **Anubhav's Punk**, a cutting-edge, sci-fi themed terminal for browsi
 
 The terminal supports the following commands (specially designed for maximum sci-fi flair):
 
-- `help`: Displays a list of available commands. Perfect for when you're lost in cyberspace.
-- `list`: Lists all blog posts. Consider it your galactic directory.
-- `view <post_id>`: View the content of a specific blog post. Beam it directly to your screen.
-- `about`: Information about the author and the terminal. Spoiler: It’s all about me and this amazing terminal.
+- `start       - Kick things off, because why not?`
+- `explore     - Just in case you didn't like the first start`
+- `help        - I'll tell you everything I know... which isn't much`
+- `who am i    - Identity crisis? Let's figure out who you are!`
+- `social      - Stalk me online (social media links)`
+- `blogs       - Pretend to read my blog (links included)`
+- `all commands- Spoiler alert: It's this list`
+- `clear       - Magic trick! Watch the terminal disappear`
+- `list        - Lists all blog posts. Consider it your galactic directory`
+- `view <post_id> - View the content of a specific blog post. Beam it directly to your screen`
+- `about       - Information about the author and the terminal. Spoiler: It’s all about me and this amazing terminal`
+
 
 ## 🛠️ Technologies Used
 
