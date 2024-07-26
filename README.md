@@ -65,8 +65,13 @@ Once you've set up the project, use the terminal interface to navigate through b
 ## 📸 Screenshots
 
 ![screenshot1](img/s1.png)
-![screenshot2](videos/v1.mp4)
-![screenshot2](videos/v2.mp4)
+
+## 🎬 Demo Video
+
+For a quick walkthrough of the project, check out this demo video:
+
+[![Anubhav's Punk Demo](img/g1.gif)](https://www.youtube.com/watch?v=H8LYB0x2jzk)
+
 
 ## 🌌 Contributing
 
